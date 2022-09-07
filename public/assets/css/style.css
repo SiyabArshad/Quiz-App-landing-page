@@ -1,0 +1,624 @@
+/*
+Theme Name: Polo
+Theme URI: http://themewagon.com/demo/polo-responsive-app-landing-page-template
+Author: ThemeWagon
+Author URI: http://themewagon.com/
+Description: One page app landing HTML5 CSS3 template powered by Bootstrap 3.
+Version: 2.0
+License: MPL v2.0
+License URI: https://www.mozilla.org/MPL/2.0/
+Tags: green, white, responsive-layout, one page, full-width-template
+Text Domain: polo
+*/
+
+/**
+* Table of Contents:
+*
+* 01.0 - Custom Fonts
+* 02.0 - Global
+* 03.0 - Side Menu
+* 04.0 - Preloader
+* 05.0 - Header
+* 06.0 - Banner
+* 07.0 - Features
+* 08.0 - Gallery
+* 09.0 - Team Member
+* 10.0 - Testimonial
+* 11.0 - Subscribe
+* 12.0 - Contact us
+* 13.0 - Footer
+* 14.0 - Responsive Fixes
+* -----------------------------------------------------------------------------
+*/
+
+
+/* ///////////////////////////////////////////////////////////////////// 
+//  01 - Custom Fonts 
+/////////////////////////////////////////////////////////////////////*/
+
+
+
+
+@font-face {
+    font-family: 'cooper_hewittbold';
+    src: url('../fonts/cooperhewitt-bold-webfont.woff2') format('woff2'),
+         url('../fonts/cooperhewitt-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'cooper_hewittlight';
+    src: url('../fonts/cooperhewitt-light-webfont.woff2') format('woff2'),
+         url('../fonts/cooperhewitt-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'cooper_hewittmedium';
+    src: url('../fonts/cooperhewitt-medium-webfont.woff2') format('woff2'),
+         url('../fonts/cooperhewitt-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/* ///////////////////////////////////////////////////////////////////// 
+//  02 - Global 
+/////////////////////////////////////////////////////////////////////*/
+::-webkit-scrollbar {
+    display: none;
+  }
+  
+
+
+* {
+    outline: none !important;
+}
+.custman{
+    animation: taadaa 3s ease-in-out;
+}
+@keyframes taadaa { 
+    0% {
+      opacity: 0;
+    }
+    25%{
+      opacity: 0;
+    }
+    50%{
+      opacity: 0.5;
+    }
+    75%{
+      opacity: 0.7;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+#logm{
+    font-family:"cooper_hewittbold" , sans-serif;
+}
+.logm1{
+    font-family:"cooper_hewittbold" , sans-serif;
+    font-size: 40px;
+    margin-top: -15px;
+    display: block; 
+}
+p{
+    color: grey;
+}
+p, a, li{
+    font-family: 'Oxygen', sans-serif;
+}
+a {
+    transition: all 0.3s ease-out;
+    position: relative;
+    padding: .5em;
+    margin: -.5em;
+}
+
+a:focus, 
+a:hover {
+    text-decoration: none;
+    color: #548a3e;
+}
+
+.block-title {
+    font-weight: 300;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 3.8em;
+    padding: 0 40px;
+    margin: 0;
+    line-height: 1.6;
+    display: inline-block;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.block {
+    padding: 10px 0px 10px 0px;
+    overflow: hidden;
+}
+.title-box{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.bb-top-left {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 0;
+    left: 0;
+    border-top: 1px solid #000;
+    border-left: 1px solid #000;
+}
+.bb-bottom-left {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    bottom: 0;
+    left: 0;
+    border-bottom: 1px solid #000;
+    border-left: 1px solid #000;
+}
+.bb-top-right {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 0;
+    right: 0;
+    border-top: 1px solid #000;
+    border-right: 1px solid #000;
+}
+.bb-bottom-right {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    bottom: 0;
+    right: 0;
+    border-bottom: 1px solid #000;
+    border-right: 1px solid #000;
+}
+.polo-btn {
+    display: block;
+    color: #000;
+    border: 1px solid;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 100;
+    padding: 15px 0px;
+    margin: 0px 0px 20px 1px;
+    transition: 0.4s ease all;
+}
+/* ///////////////////////////////////////////////////////////////////// 
+//  06 - Banner
+/////////////////////////////////////////////////////////////////////*/
+
+#banner {
+    background-color: #fff;
+    background-size: cover;
+    padding-top: 10px;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.headings {
+    padding: 5% 0 0 0;
+    color: #000;
+}
+.headings h1 {
+    font-size: 40px;
+    font-weight: 300;
+    padding-bottom: 20px;
+}
+#imph2{
+    font-size: 40px;
+    font-weight: 200;
+    padding-bottom: 0px;
+    display: block;
+    font-family: cooper_hewittlight;
+}
+#imph3{
+    font-size: 40px;
+    font-weight: 200;
+    padding-bottom: 0px;
+    display: block;
+    font-family: cooper_hewittlight;
+}
+.cpt {
+    font-size: 18px;
+    font-weight: 300;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+.hand-container {
+    max-height: 630px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top:11%;
+    padding-bottom: 3%;
+   }
+.iphone-hand {
+    margin-left: 15%;
+    height: 350px;
+    width: 350px;
+    background-image: url("../LOGO/actual_logos/logo2.jpeg");
+    background-size: contain;
+   }
+   .iphone-hand:hover{
+    cursor: pointer;
+    height: 370px;
+    width: 370px;
+    transition: 0.5s;
+   }
+.store:hover{
+    background: #548a3e;
+    border-color: #548a3e;
+    color: #fff; 
+}
+.polo-btn i {
+    padding-right: 6px;
+}
+.slidedown {
+    font-size: 50px;
+    color:#000;
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    z-index: 99;
+    cursor: pointer;
+}
+#fnames{
+    font-size: 20px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+/* ///////////////////////////////////////////////////////////////////// 
+//  07 - Features
+/////////////////////////////////////////////////////////////////////*/
+.f1cs{
+    display: flex; justify-content: end;
+}
+.f2cs{
+    display: flex; justify-content: center;
+}
+.f3cs{
+    display: flex; justify-content: start;
+}
+.feature-box {
+    padding: 30px 0px;
+    text-align: center;
+    max-width: 360px;
+    
+}
+.feature-box i {
+    font-size: 7em;
+    line-height: 0 !important;
+    margin: 0;
+    padding: 0;
+}
+.feature-box p {
+    padding: 0px 20px;
+    color: grey;
+}
+.feature-box h2 {
+    margin: 0;
+    padding: 20px 0px;
+    font-weight: 300;
+}
+
+
+/* ///////////////////////////////////////////////////////////////////// 
+//  12 - Contact us Section
+/////////////////////////////////////////////////////////////////////*/
+
+
+.address {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.address-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.address-list span {
+    font-size: 22px;
+    padding: 0.5em 0.2rem;
+    color: #fff;
+    font-weight: 100;
+}
+.address-list span i {
+    display: table-cell;
+    line-height: 1.8;
+    width: 50px;
+    height: 50px;
+    margin-right: .5em;
+    text-align: center;
+    font-size: 30px;
+    border-radius: 50%;
+}
+/*768px*/
+
+@media all and (max-width: 990px) {
+       /* ///////////////////////////////////////////////////////////////////// 
+//  05 - Header
+/////////////////////////////////////////////////////////////////////*/
+
+.sticky{
+    padding: 10px 0px;
+}
+.logo {
+    font-size: 2.3em;
+    line-height: 1.2;
+}
+.block-title {
+   font-size: 2.5em;
+}
+
+.block {
+    padding: 10px 0px 15px 0px;
+    overflow: hidden;
+}
+.title-box{
+    text-align: center;   
+    margin-bottom: 30px;
+}
+#banner {
+    padding-top: 25px;
+}
+
+.headings {
+    padding: 8% 0 8% 0;
+}
+.headings h1 {
+    font-size: 35px;
+    font-weight: 300;
+    padding-bottom: 15px;
+    text-align: center;
+}
+#imph2{
+    font-size: 35px;
+    font-weight: 300;
+    padding-bottom: 0px;
+    display: block;
+    text-align: center;
+}
+#imph3{
+    font-size: 35px;
+    font-weight: 300;
+    padding-bottom: 0px;
+    display: block;
+    text-align: center;
+    
+}
+.cpt {
+    font-size: 14px;
+    font-weight: 300;
+    padding-bottom: 15px;
+    text-align: center;
+}
+.img_res{
+    width: 50%;
+    height: auto;
+    max-width: 50%;
+}
+.f1cs{
+    display: flex; justify-content: center;
+}
+.f2cs{
+    display: flex; justify-content: center;
+}
+.f3cs{
+    display: flex; justify-content: center;
+}
+.logm1{
+    font-family:"cooper_hewittmedium" , sans-serif;
+    margin-top: -5px;
+    font-size: 35px;
+    display: block;
+    text-align: center;
+}
+}
+
+
+/*480px*/
+
+@media all and (max-width: 480px) {
+    /* ///////////////////////////////////////////////////////////////////// 
+//  05 - Header
+/////////////////////////////////////////////////////////////////////*/
+
+.sticky{
+    padding: 10px 0px;
+}
+.logo {
+    font-size: 1.7em;
+    line-height: 1;
+}
+/* ///////////////////////////////////////////////////////////////////// 
+//  06 - Banner
+/////////////////////////////////////////////////////////////////////*/
+
+.block-title {
+    font-size: 2.2em;
+ }
+ 
+ .block {
+     padding: 10px 0px 10px 0px;
+     overflow: hidden;
+ }
+ .title-box{
+     text-align: center;   
+     margin-bottom: 20px;
+ }
+ /* ///////////////////////////////////////////////////////////////////// 
+//  06 - Banner
+/////////////////////////////////////////////////////////////////////*/
+
+#banner {
+    padding-top: 20px;
+}
+
+.headings {
+    padding: 5% 0 5% 0;
+}
+.headings h1 {
+    font-size: 28px;
+    font-weight: 300;
+    padding-bottom: 10px;
+    text-align: center;
+}
+#imph2{
+    font-size: 28px;
+    font-weight: 300;
+    padding-bottom: 0px;
+    display: block;
+    text-align: center;
+}
+.logm1{
+    font-family:"cooper_hewittmedium" , sans-serif;
+    margin-top: -5px;
+    font-size: 28px;
+    display: block;
+    text-align: center;
+}
+#imph3{
+    font-size: 28px;
+    font-weight: 300;
+    padding-bottom: 0px;
+    display: block;
+    text-align: center;
+    
+}
+.cpt {
+    font-size: 12px;
+    font-weight: 300;
+    text-align: center;
+    padding-bottom: 10px;
+}
+#fnames{
+    font-size: 15px;
+}
+.img_res{
+    width: 70%;
+    height: auto;
+    max-width: 70%;
+}
+.f1cs{
+    display: flex; justify-content: center;
+}
+.f2cs{
+    display: flex; justify-content: center;
+}
+.f3cs{
+    display: flex; justify-content: center;
+}
+}
+
+
+/*480px*/
+
+@media all and (max-width: 365px) {
+    /* ///////////////////////////////////////////////////////////////////// 
+//  05 - Header
+/////////////////////////////////////////////////////////////////////*/
+
+.sticky{
+    padding: 10px 0px;
+}
+.logo {
+    font-size: 1.7em;
+    line-height: 1;
+}
+/* ///////////////////////////////////////////////////////////////////// 
+//  06 - Banner
+/////////////////////////////////////////////////////////////////////*/
+
+.block-title {
+    font-size: 2.2em;
+ }
+ 
+ .block {
+     padding: 10px 0px 10px 0px;
+     overflow: hidden;
+ }
+ .title-box{
+     text-align: center;   
+     margin-bottom: 20px;
+ }
+ /* ///////////////////////////////////////////////////////////////////// 
+//  06 - Banner
+/////////////////////////////////////////////////////////////////////*/
+
+#banner {
+    padding-top: 20px;
+}
+
+.headings {
+    padding: 5% 0 5% 0;
+}
+.headings h1 {
+    font-size: 28px;
+    font-weight: 300;
+    padding-bottom: 10px;
+    text-align: center;
+}
+#imph2{
+    font-size: 28px;
+    font-weight: 300;
+    padding-bottom: 0px;
+    display: block;
+    text-align: center;
+}
+.logm1{
+    font-family:"cooper_hewittmedium" , sans-serif;
+    margin-top: -5px;
+    font-size: 28px;
+    display: block;
+    text-align: center;
+}
+#imph3{
+    font-size: 28px;
+    font-weight: 300;
+    padding-bottom: 0px;
+    display: block;
+    text-align: center;
+    
+}
+.cpt {
+    font-size: 12px;
+    font-weight: 300;
+    text-align: center;
+    padding-bottom: 10px;
+}
+#fnames{
+    font-size: 12px;
+}
+.img_res{
+    width: 70%;
+    height: auto;
+    max-width: 70%;
+}
+.f1cs{
+    display: flex; justify-content: center;
+}
+.f2cs{
+    display: flex; justify-content: center;
+}
+.f3cs{
+    display: flex; justify-content: center;
+}
+}
